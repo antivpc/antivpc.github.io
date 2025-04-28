@@ -1,0 +1,39 @@
+Sí, GitHub Pages ahora utiliza GitHub Actions para ejecutar la compilación de Jekyll. Esto significa que el proceso de construir y desplegar tu sitio web basado en Jekyll a través de GitHub Pages se automatiza y se controla a través de flujos de trabajo de GitHub Actions. 
+
+https://docs.github.com/es/pages/setting-up-a-github-pages-site-with-jekyll/setting-a-markdown-processor-for-your-github-pages-site-using-jekyll#:~:text=GitHub%20Pages%20ahora%20usan%20GitHub,abrir%20el%20editor%20de%20archivos.
+
+https://translate.google.com/translate?u=https://github.blog/news-insights/product-news/github-pages-now-uses-actions-by-default/&hl=es&sl=en&tl=es&client=sge#:~:text=Un%20futuro%20brillante%20impulsado%20por,que%20se%20implementen%20confirmaciones%20incorrectas.
+
+Beneficios de usar GitHub Actions para la compilación de Jekyll:
+
+Mayor transparencia: Puedes ver cada paso de la compilación y desplegar con mayor facilidad. 
+
+Más control: Puedes personalizar el flujo de trabajo de compilación y desplegar a tu gusto, incluyendo la inyección de secretos, la aprobación de implementaciones y la comprobación de compilación. 
+
+Mayor comunidad: La comunidad de GitHub Actions es amplia y ofrece un gran número de acciones predefinidas que puedes utilizar para automatizar tus procesos de compilación y desplegar. 
+
+Integración continua: GitHub Actions facilita la integración continua de tu sitio web, permitiéndote desplegar los cambios rápidamente después de que se publiquen en tu repositorio. 
+
+https://docs.github.com/es/actions/about-github-actions/understanding-github-actions#:~:text=GitHub%20Actions%20es%20una%20plataforma,de%20cambios%20fusionadas%20a%20producci%C3%B3n.
+
+Para usar GitHub Actions con Jekyll en GitHub Pages:
+
+1. Habilita GitHub Actions en tu repositorio:
+Asegúrate de que GitHub Actions esté habilitado en tu repositorio de GitHub. 
+
+2. Crea un flujo de trabajo de GitHub Actions:
+Puedes crear un flujo de trabajo que compile tu sitio Jekyll y lo despliegue en GitHub Pages. 
+
+3. Utiliza la acción de Jekyll:
+Existen acciones predefinidas que facilitan la compilación de sitios Jekyll. 
+
+https://translate.google.com/translate?u=https://jekyllrb.com/docs/continuous-integration/github-actions/&hl=es&sl=en&tl=es&client=sge#:~:text=Al%20crear%20un%20sitio%20Jekyll,la%20configuraci%C3%B3n%20de%20un%20sitio.
+
+4. Personaliza tu flujo de trabajo:
+Puedes personalizar tu flujo de trabajo para incluir pasos adicionales, como la ejecución de pruebas, la generación de informes o la publicación en otros servicios. 
+
+Alternativa:
+
+Si no deseas utilizar GitHub Actions o si no están habilitados en tu repositorio, puedes omitir el proceso de compilación de Jekyll agregando un archivo .nojekyll a la raíz de la rama de origen. 
+
+En resumen, GitHub Pages ahora utiliza GitHub Actions para la compilación de Jekyll, lo que proporciona mayor transparencia, control y flexibilidad en el proceso de despliegue. 
