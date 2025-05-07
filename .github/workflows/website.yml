@@ -28,4 +28,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           # Directorio que contiene los archivos construidos o estáticos
           # Si no tienes un paso de construcción, usa la raíz del repositorio "."
-          build_dir: .
+          build_dir: docs
