@@ -7,6 +7,12 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
+    permissions:
+      id-token: write # Permiso para escribir el token de ID
+      pages: write # Permiso para escribir en GitHub Pages
+      contents: read # Permiso para leer el contenido del repositorio
+
     steps:
       - name: Checkout del código
         uses: actions/checkout@v4
