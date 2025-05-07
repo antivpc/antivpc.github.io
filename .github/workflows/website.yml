@@ -1,0 +1,31 @@
+name: Desplegar website
+
+on:
+  push:
+    branches: [ "site" ] # Cambia a "master" si esa es tu rama principal
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del código
+        uses: actions/checkout@v4
+
+      # Paso opcional: Construir el sitio estático (si es necesario)
+      # Adapta estos comandos según tu generador de sitios estáticos o proceso de construcción
+      # - name: Configurar Node.js (si usas Node.js)
+      #   uses: actions/setup-node@v3
+      #   with:
+      #     node-version: '18' # o la versión que necesites
+      # - name: Instalar dependencias (si es necesario)
+      #   run: npm install
+      # - name: Construir el sitio (si es necesario)
+      #   run: npm run build
+
+      - name: Desplegar a GitHub Pages
+        uses: actions/deploy-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # Directorio que contiene los archivos construidos o estáticos
+          # Si no tienes un paso de construcción, usa la raíz del repositorio "."
+          build_dir: .
